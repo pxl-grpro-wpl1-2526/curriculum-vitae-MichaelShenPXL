@@ -1,12 +1,22 @@
 body{
-    background: linear-gradient(100deg, #C6C5B9, #62929E, #4A6D7C);
 }
 img{
     width: 150px;
 }
-div{
-    width: 300px;
-    border: 5px solid #008080;
-    padding: 15px;
+
+.vakken{
+    display: flex;
+    justify-content: center;
+}
+
+.vak-links{
+    padding: 20px;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+.vak-rechts{
+    padding: 20px;
+    border: 1px solid black;
     margin: 2px;
 }

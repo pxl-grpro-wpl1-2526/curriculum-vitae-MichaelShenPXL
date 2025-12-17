@@ -1,7 +1,15 @@
 body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #014f4f;
 }
 img{
     width: 150px;
+    border-radius: 10%;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+}
+img:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .vakken{
@@ -11,12 +19,70 @@ img{
 
 .vak-links{
     padding: 20px;
-    border: 1px solid black;
+
     margin: 5px;
+    background-color: teal;
+    border-radius: 10px;
 }
 
 .vak-rechts{
     padding: 20px;
-    border: 1px solid black;
-    margin: 2px;
+    border: 1px white solid;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: white;
 }
+.gegevens{
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+
+.soft-skills{
+    padding: 10px;
+    color: white;
+}
+.hard-skills{
+    padding: 10px;
+    color: white;
+}
+.diploma{
+    padding: 10px;
+    color: white;
+}
+.taal{
+    padding: 10px;
+    color: white;
+}
+.mezelf{
+    padding: 10px;
+    border: 2px solid teal;
+    border-radius: 10px;
+}
+.werkervaring{
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid teal;
+}
+.studies{
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid teal;
+}
+.vrije-tijd{
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid teal;
+}
+.footer{
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+footer h1{
+    color: white;
+    text-align: center;
+}
+

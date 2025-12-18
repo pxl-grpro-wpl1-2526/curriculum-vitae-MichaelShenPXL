@@ -20,21 +20,25 @@ img:hover{
 .vak-links{
     padding: 20px;
 
-    margin: 5px;
+    margin: 10px;
     background-color: teal;
     border-radius: 10px;
 }
 
 .vak-rechts{
-    padding: 20px;
+    display: flex;
+    padding: 60px;
     border: 1px white solid;
-    margin: 5px;
+    margin: 10px;
     border-radius: 10px;
     background-color: white;
+
+
+
 }
 .gegevens{
     padding: 10px;
-    border-radius: 10px;
+
     color: white;
 }
 
@@ -55,34 +59,60 @@ img:hover{
     padding: 10px;
     color: white;
 }
-.mezelf{
+.vak-rechts td{
+    
     padding: 10px;
     border: 2px solid teal;
     border-radius: 10px;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
 }
-.werkervaring{
-    padding: 10px;
-    border-radius: 10px;
-    border: 2px solid teal;
+.vak-rechts td:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
-.studies{
-    padding: 10px;
-    border-radius: 10px;
-    border: 2px solid teal;
-}
-.vrije-tijd{
-    padding: 10px;
-    border-radius: 10px;
-    border: 2px solid teal;
-}
-.footer{
-    padding: 10px;
+
+footer{
+
     color: white;
     display: flex;
-    justify-content: center;
+    background-color: #008080;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+
+    
 }
-footer h1{
+footer a{
     color: white;
-    text-align: center;
+    text-decoration: none;
+
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
 }
+footer a:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.opdracht{
+    color: white;
+
+    padding: 20px;
+
+}
+.naam{
+    color: white;
+    text-align: left;
+    padding: 20px;
+
+}
+.top{
+    margin-left: 50px;
+    display: flex;
+    
+    background-color: #03a8a8;
+
+
+    border-radius: 10px;
+
+}
+
 

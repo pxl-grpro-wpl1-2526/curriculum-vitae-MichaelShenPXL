@@ -11,6 +11,7 @@ img{
 img:hover{
     transform: scale(1.1);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-in-out;
 
 }
 
@@ -30,13 +31,9 @@ img:hover{
 .vak-rechts{
     display: flex;
     padding: 60px;
-    border: 1px white solid;
     margin: 10px;
     border-radius: 10px;
-    background-color: #E0E0E2;
-
-
-
+    background-color: #F9F9F9;
 }
 .gegevens{
     padding: 10px;
@@ -66,33 +63,33 @@ img:hover{
     padding: 10px;
     border: 3px solid #284B63;
     border-radius: 10px;
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
-    transition: box-shadow 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
 }
+
+
+
 .vak-rechts td:hover{
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transform: scale(1.01);
+    border: 4px solid #40729b;
 }
 
 footer{
-
     color: white;
     display: flex;
     background-image: linear-gradient(to left, #284B63, #153243, #284B63);
     border-radius: 10px;
     justify-content: space-between;
     align-items: center;
-
-    
 }
+
 footer a{
     color: white;
     text-decoration: none;
-
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
     transition: box-shadow 0.3s ease-in-out;
 }
 footer a:hover{
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
 }
 .opdracht{
     color: white;
@@ -116,23 +113,23 @@ footer a:hover{
     border-radius: 10px;
 }
 
-@media (min-width: 576px) {
+@media screen and (width < 576px) {
+    .vak-rechts {
+        padding: 10px;
+    }
+}
+@media screen and (min-width: 992px) {
     .img {grid-area: 1 / span 6;}
     .vak-links {grid-area: 2 / span 1;}
     .vak-rechts {grid-area: 2 / span 4;}
     .footer {grid-area: 3 / span 6;}
 }
-@media (min-width: 992px) {
+@media screen and (min-width: 576px) and (max-width: 992px) {
     .img {grid-area: 1 / span 6;}
     .vak-links {grid-area: 2 / span 1;}
     .vak-rechts {grid-area: 2 / span 4;}
     .footer {grid-area: 3 / span 6;}
 }
-@media (min-width: 576px) and (max-width: 992px) {
-    .img {grid-area: 1 / span 6;}
-    .vak-links {grid-area: 2 / span 1;}
-    .vak-rechts {grid-area: 2 / span 4;}
-    .footer {grid-area: 3 / span 6;}
-}
+
 
 
